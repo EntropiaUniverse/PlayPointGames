@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to play the PlayPointGames Twitch chat mining RPG: mine, steal, level up, gamble, enter giveaways, buy spins and redeem them.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>PlayPointGames Chat RPG Guide</title>
+  <link rel="stylesheet" href="./game-guide.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PlayPointGames Chat RPG home"><span class="brand-mark">PPG</span><span>Chat RPG</span></a>
+    <nav aria-label="Guide sections"><a href="#play">Play</a><a href="#rewards">Rewards</a><a href="#commands">Commands</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PLAY LIVE IN TWITCH CHAT</p>
+        <h1>Mine. Steal. Level up.</h1>
+        <p class="lede">Build your miner’s inventory while watching PlayPointGames. Every action can earn resources, XP and gold—then gold becomes spins, giveaway entries or a risky wager.</p>
+        <div class="hero-actions"><a class="button primary" href="#commands">See every command</a><a class="button secondary" href="#redeem">How to redeem</a></div>
+      </div>
+      <div class="action-card" aria-label="Quick start">
+        <div class="pickaxe">⛏️</div>
+        <p>START HERE</p><code>!mine</code><span>Use it in Twitch chat. Mining and stealing share a 5-minute cooldown.</span>
+      </div>
+    </section>
+
+    <section id="play" class="section">
+      <div class="section-heading"><p class="eyebrow">THE CORE LOOP</p><h2>Choose your next move</h2></div>
+      <div class="feature-grid">
+        <article><span class="icon">⛏️</span><h3>Mine</h3><code>!mine</code><p>Join the on-stream queue and uncover one random mineral. You also receive that mineral’s XP and gold reward.</p></article>
+        <article><span class="icon">🥷</span><h3>Steal</h3><code>!steal @username</code><p>You have a 40% chance to take one mineral, 10% of the victim’s gold and the mineral’s XP. If caught, you pay them 10% of your gold.</p></article>
+        <article><span class="icon">🎲</span><h3>Gamble</h3><code>!gamble 50</code><p>Bet an amount—or use <strong>!gamble all</strong>. Win the same amount on rolls 51–100; lose the wager on rolls 1–50.</p></article>
+      </div>
+      <aside class="rule"><strong>One action every 5 minutes.</strong> Mining and stealing use the same cooldown. Gambling does not.</aside>
+    </section>
+
+    <section class="section minerals">
+      <div class="section-heading"><p class="eyebrow">WHAT YOU CAN FIND</p><h2>Five resources, five rarities</h2></div>
+      <div class="mineral-row">
+        <article><span>🪨</span><strong>Stone</strong><small>50% · 3 XP · 1 gold</small></article>
+        <article><span>⚙️</span><strong>Iron</strong><small>30% · 5 XP · 3 gold</small></article>
+        <article><span>◈</span><strong>Silver</strong><small>15% · 10 XP · 15 gold</small></article>
+        <article><span>✨</span><strong>Gold Ore</strong><small>4% · 25 XP · 50 gold</small></article>
+        <article><span>💎</span><strong>Diamond</strong><small>1% · 80 XP · 150 gold</small></article>
+      </div>
+    </section>
+
+    <section id="rewards" class="section split">
+      <div>
+        <p class="eyebrow">SPEND YOUR GOLD</p><h2>Turn chat progress into rewards</h2>
+        <ol class="steps">
+          <li><span>1</span><div><strong>Link your account</strong><code>!nick "YourPPGNickname"</code><p>Use the exact nickname from PlayPointGames.</p></div></li>
+          <li><span>2</span><div><strong>Buy spins</strong><code>!buy spins 1</code><p>Each Wheel of Fortune spin costs 25 gold. Leave out the amount to buy as many as you can afford.</p></div></li>
+          <li id="redeem"><span>3</span><div><strong>Redeem all held spins</strong><code>!redeem spins</code><p>Your request enters a manual queue. The admin credits the spins to your linked PPG account.</p></div></li>
+        </ol>
+      </div>
+      <article class="giveaway-card"><p class="eyebrow">GIVEAWAYS</p><h2>One entry. One winner.</h2><p>When a giveaway is open, link your PPG nickname and spend <strong>25 gold</strong> to enter. Each player can enter once. One person is randomly picked when the giveaway closes.</p><div class="command-pair"><code>!giveaway</code><span>Check status and rules</span></div><div class="command-pair"><code>!enter</code><span>Pay 25 gold and enter</span></div><p class="fine-print">The current prize is 10 spins, added to the winner’s chat inventory.</p></article>
+    </section>
+
+    <section id="commands" class="section">
+      <div class="section-heading"><p class="eyebrow">COMMAND REFERENCE</p><h2>Everything viewers can use</h2></div>
+      <div class="command-grid">
+        <article><code>!profile</code><p>Show level, XP, gold, spins, resources and linked nickname.</p></article>
+        <article><code>!inv</code><p>Alias for your complete profile and inventory.</p></article>
+        <article><code>!top</code><p>Show the five richest players.</p></article>
+        <article><code>!shop</code><p>See available rewards and their prices.</p></article>
+        <article><code>!buy spins [amount]</code><p>Buy spins for 25 gold each. Omit the amount to buy the maximum.</p></article>
+        <article><code>!redeem spins</code><p>Submit all held spins for manual website credit.</p></article>
+        <article><code>!nick "nickname"</code><p>Link your PlayPointGames nickname.</p></article>
+        <article><code>!giveaway</code><p>See whether a giveaway is open, its cost, prize and entry count.</p></article>
+        <article><code>!enter</code><p>Enter the open giveaway once for 25 gold.</p></article>
+        <article><code>!help</code><p>Show the short in-chat guide.</p></article>
+        <article><code>!commands</code><p>List all viewer commands.</p></article>
+        <article><code>!game</code><p>Explain the game loop, gold uses and account linking.</p></article>
+        <article><code>!ppg</code><p>Get the PlayPointGames website.</p></article>
+        <article><code>!discord</code><p>Get the community Discord invite.</p></article>
+        <article><code>!lurk</code><p>Let the channel know you’re lurking.</p></article>
+        <article><code>!feu</code><p>Drop the channel’s quick hype message.</p></article>
+        <article><code>!ping</code><p>Check whether the bot is responding.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>PlayPointGames Chat RPG</strong><span>Play in Twitch chat while the stream is live.</span></footer>
+</body>
+</html>
