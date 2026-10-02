@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How to play the PlayPointGames Twitch chat mining RPG: mine, steal, level up, gamble, enter giveaways, buy spins and redeem them.">
+  <meta name="description" content="Play the PlayPointGames chat RPG on Twitch or from Entropia Universe: link your avatar, mine, steal, level up, gamble, enter giveaways and redeem spins.">
   <meta name="theme-color" content="#0b0d12">
   <title>PlayPointGames Chat RPG Guide</title>
-  <link rel="stylesheet" href="./game-guide.css">
+  <link rel="stylesheet" href="./game-guide.css?v=20261002-2">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="PlayPointGames Chat RPG home"><span class="brand-mark">PPG</span><span>Chat RPG</span></a>
-    <nav aria-label="Guide sections"><a href="#play">Play</a><a href="#upgrade">Upgrade</a><a href="#rewards">Rewards</a><a href="#commands">Commands</a></nav>
+    <nav aria-label="Guide sections"><a href="#play">Play</a><a href="#game-chat">In-game chat</a><a href="#upgrade">Upgrade</a><a href="#rewards">Rewards</a><a href="#commands">Commands</a></nav>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">PLAY LIVE IN TWITCH CHAT</p>
+        <p class="eyebrow">TWITCH CHAT + ENTROPIA UNIVERSE</p>
         <h1>Mine. Steal. Level up.</h1>
-        <p class="lede">Build your miner’s inventory while watching PlayPointGames. Every action can earn resources, XP and gold—then gold becomes spins, giveaway entries or a risky wager.</p>
-        <div class="hero-actions"><a class="button primary" href="#commands">See every command</a><a class="button secondary" href="#redeem">How to redeem</a></div>
+        <p class="lede">Build your miner’s inventory while watching PlayPointGames. Play in Twitch chat—or link your Entropia avatar and play from the game. Gather resources, XP and gold, then spend gold on spins, giveaway entries or a risky wager.</p>
+        <div class="hero-actions"><a class="button primary" href="#commands">See every command</a><a class="button secondary" href="#game-chat">Play from Entropia</a><a class="button secondary" href="#redeem">How to redeem</a></div>
       </div>
       <div class="action-card" aria-label="Quick start">
         <div class="pickaxe">⛏️</div>
-        <p>START HERE</p><code>!mine</code><span>Use it in Twitch chat. Mining and stealing share a 5-minute cooldown.</span>
+        <p>START HERE</p><code>!mine</code><span>Use it in Twitch chat, or in the game channel after linking your avatar. Mining and stealing share a 5-minute cooldown.</span>
       </div>
     </section>
 
@@ -36,6 +36,35 @@
         <article><span class="icon">🎲</span><h3>Gamble</h3><code>!gamble 50</code><p>Bet 1–500 gold—or use <strong>!gamble all</strong> to bet up to 500. Win the same amount on rolls 51–100; lose the wager on rolls 1–50.</p></article>
       </div>
       <aside class="rule"><strong>Two personal timers.</strong> Mining and stealing share a 5-minute cooldown. Gambling has its own separate 5-minute cooldown.</aside>
+    </section>
+
+    <section id="game-chat" class="section game-chat-section">
+      <div class="section-heading"><p class="eyebrow">ONE PLAYER, TWO CHATS</p><h2>Play from Entropia</h2><p>Link your avatar once. Your in-game commands then use your existing Twitch RPG character—no extra app to install.</p></div>
+      <div class="split">
+        <div>
+          <ol class="steps">
+            <li><span>1</span><div><strong>Start in PlayPointGames Twitch chat</strong><code>!avatar "Full Avatar Name"</code><p>Replace the example with your complete Entropia avatar name. Keep the quotation marks.</p></div></li>
+            <li><span>2</span><div><strong>Confirm from that avatar in game</strong><code>!twitch "yourtwitchname"</code><p>Join the Entropia <strong>ppg</strong> chat channel and send this from the exact avatar you requested. Use your Twitch username, not your PPG website nickname. There is no code or expiry timer.</p></div></li>
+            <li><span>3</span><div><strong>Play in either chat</strong><code>!mine</code><p>After confirmation, use the RPG commands in Twitch chat or the selected game channel. Watch Twitch chat and the stream for replies and action results.</p></div></li>
+          </ol>
+          <p class="fine-print">The game channel is currently <strong>ppg</strong>; the streamer can change it. If linking fails, check both names and the channel, or ask the admin to help. Each Twitch account can link to one avatar, and each avatar to one Twitch account.</p>
+        </div>
+        <article class="game-chat-card">
+          <p class="eyebrow">GAME CHAT → TWITCH</p><h3>Your game chat can join the stream</h3>
+          <p>Messages and commands from the selected game channel can appear in Twitch chat like this:</p>
+          <blockquote class="relay-example">Apielol said in game: !mine</blockquote>
+          <p>The streamer can relay all messages, commands only, or turn the relay off. Turning the relay off does not disable linked game commands.</p>
+          <p><strong>Replies appear on Twitch, not in Entropia.</strong> Mining and stealing also appear in the on-stream action queue. PPGBot does not send messages back into the game.</p>
+          <p class="fine-print">The bot must be online and the stream host must be receiving the selected game channel. Commands sent while the reader is stopped are not replayed later.</p>
+        </article>
+      </div>
+      <div class="feature-grid game-chat-details">
+        <article><h3>Same character</h3><p>Your level, XP, gold, minerals, spins and Pickaxe uses stay together. Switching chats does not create a second player or reset progress.</p></article>
+        <article><h3>Same timers</h3><p>Mining and stealing share one 5-minute timer across both chats. Gambling has a separate 5-minute timer and a 500-gold maximum. For <code>!steal @username</code>, always use the victim’s <strong>Twitch username</strong>, even in game.</p></article>
+        <article><h3>Same rewards</h3><p>Shop purchases, spin redemption and giveaways use the same account. Entering from both chats still gives only one giveaway entry. Keep your PPG website nickname linked with <code>!nick "YourPPGNickname"</code> for giveaways and redemption.</p></article>
+      </div>
+      <aside class="rule"><strong>Avatar link ≠ reward nickname.</strong> <code>!avatar</code> links Entropia to Twitch; <code>!nick</code> identifies your PlayPointGames website account. They are separate.</aside>
+      <p class="fine-print">Chat logging: when enabled, the bot keeps separate local records of Twitch chat (including bot replies) and messages from the selected game channel for support. Game-channel messages may also be shared publicly through the Twitch relay.</p>
     </section>
 
     <section id="upgrade" class="section upgrade-section">
@@ -69,17 +98,20 @@
       <div>
         <p class="eyebrow">SPEND YOUR GOLD</p><h2>Turn chat progress into rewards</h2>
         <ol class="steps">
-          <li><span>1</span><div><strong>Link your account</strong><code>!nick "YourPPGNickname"</code><p>Use the exact nickname from PlayPointGames.</p></div></li>
+          <li><span>1</span><div><strong>Set your PPG reward nickname</strong><code>!nick "YourPPGNickname"</code><p>Use the exact nickname from the PlayPointGames website. This is separate from your Entropia avatar link.</p></div></li>
           <li><span>2</span><div><strong>Buy spins</strong><code>!buy spins 1</code><p>Each Wheel of Fortune spin costs 25 gold. Leave out the amount to buy as many as you can afford.</p></div></li>
           <li id="redeem"><span>3</span><div><strong>Redeem all held spins</strong><code>!redeem spins</code><p>Your request enters a manual queue. The admin credits the spins to your linked PPG account.</p></div></li>
         </ol>
       </div>
-      <article class="giveaway-card"><p class="eyebrow">GIVEAWAYS</p><h2>One entry. One winner.</h2><p>When a giveaway is open, link your PPG nickname and spend <strong>25 gold</strong> to enter. Each player can enter once. One person is randomly picked when the giveaway closes.</p><div class="command-pair"><code>!giveaway</code><span>Check status and rules</span></div><div class="command-pair"><code>!enter</code><span>Pay 25 gold and enter</span></div><p class="fine-print">The current prize is 10 spins, added to the winner’s chat inventory.</p></article>
+      <article class="giveaway-card"><p class="eyebrow">GIVEAWAYS</p><h2>One entry. One winner.</h2><p>When a giveaway is open, link your PPG nickname and spend <strong>25 gold</strong> to enter. Each player can enter once—even when using both Twitch and game chat. One person is randomly picked when the giveaway closes.</p><div class="command-pair"><code>!giveaway</code><span>Check status and rules</span></div><div class="command-pair"><code>!enter</code><span>Pay 25 gold and enter</span></div><p class="fine-print">The current prize is 10 spins, added to the winner’s chat inventory.</p></article>
     </section>
 
     <section id="commands" class="section">
       <div class="section-heading"><p class="eyebrow">COMMAND REFERENCE</p><h2>Everything viewers can use</h2></div>
       <div class="command-grid">
+        <article><code>!mine</code><p>Queue a mine for one random mineral, XP and gold. Shares a 5-minute cooldown with stealing.</p></article>
+        <article><code>!steal @username</code><p>Queue a theft attempt against a Twitch username. Shares your mining cooldown; see the rules above for success and failure.</p></article>
+        <article><code>!gamble &lt;amount|all&gt;</code><p>Make a 50/50 gold wager, capped at 500 gold, with its own 5-minute cooldown.</p></article>
         <article><code>!profile</code><p>Show level, XP, gold, spins, resources, Pickaxe uses and linked nickname.</p></article>
         <article><code>!inv</code><p>Alias for your complete profile and inventory.</p></article>
         <article><code>!top</code><p>Show the five richest players.</p></article>
@@ -88,6 +120,8 @@
         <article><code>!buy spins [amount]</code><p>Buy spins for 25 gold each. Omit the amount to buy the maximum.</p></article>
         <article><code>!redeem spins</code><p>Submit all held spins for manual website credit.</p></article>
         <article><code>!nick "nickname"</code><p>Link your PlayPointGames nickname.</p></article>
+        <article><code>!avatar "Full Avatar Name"</code><p><strong>Twitch only:</strong> request a link to your Entropia avatar. Complete it in game with <strong>!twitch</strong>. <a href="#game-chat">Follow the linking steps.</a></p></article>
+        <article><code>!twitch "twitchname"</code><p><strong>In game only:</strong> confirm your pending avatar link from that exact avatar in the selected game channel. Start with <strong>!avatar</strong> on Twitch first.</p></article>
         <article><code>!giveaway</code><p>See whether a giveaway is open, its cost, prize and entry count.</p></article>
         <article><code>!enter</code><p>Enter the open giveaway once for 25 gold.</p></article>
         <article><code>!help</code><p>Show the short in-chat guide and a reminder to scroll below the stream for more information.</p></article>
@@ -96,12 +130,15 @@
         <article><code>!ppg</code><p>Get the PlayPointGames website.</p></article>
         <article><code>!discord</code><p>Get the community Discord invite.</p></article>
         <article><code>!lurk</code><p>Let the channel know you’re lurking.</p></article>
+        <article><code>!quote [number]</code><p>Read a saved stream quote. Moderators can add one with <strong>!quote add</strong> followed by its text.</p></article>
+        <article><code>!counter &lt;name&gt;</code><p>See a community counter, such as deaths or wins. Moderators can update counters.</p></article>
         <article><code>!feu</code><p>Drop the channel’s quick hype message.</p></article>
         <article><code>!ping</code><p>Check whether the bot is responding.</p></article>
       </div>
+      <p class="fine-print">After linking, RPG commands work in both chats; the account-linking commands above have their own locations. The channel may also have custom commands. Type <code>!commands</code> in chat to see the current list.</p>
     </section>
   </main>
 
-  <footer><strong>PlayPointGames Chat RPG</strong><span>Play in Twitch chat while the stream is live.</span></footer>
+  <footer><strong>PlayPointGames Chat RPG</strong><span>Play on Twitch or from your linked Entropia avatar.</span></footer>
 </body>
 </html>
